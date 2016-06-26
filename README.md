@@ -20,7 +20,7 @@ Include JQuery js and plugin’s css and js files in your HTML code.
 ## Usage
 
 
-When document is ready, you are free to call plugin:
+Wait until document is ready. Then, call plugin.
 
 ```javascript
 
