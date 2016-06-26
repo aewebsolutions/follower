@@ -1,0 +1,31 @@
+.follower{
+    &:not(.not-following){
+        position: fixed;
+        &.follower-center-content .follower-content-wr{
+            position:absolute;
+            &:after{
+                content: '';
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+    
+    &.follower-center-content{
+        .follower-content-wr{
+            width:98%;
+            height: 100%;
+
+            .follower-content{
+                max-width: 90%;
+                padding: 20px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    &.follower-scroll{
+        overflow-y: auto;
+    }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demos draggable</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../libs/jquery.js"></script>
+        <link rel="stylesheet" href="../dist/follower.css" type="text/css">
+        <script src="../dist/follower.js"></script>
+        <style>
+            body{
+                padding-bottom: 1600px
+            }
+            h3{
+                margin: 30px 0 0 0;
+            }
+            p{
+                margin: 0
+            }
+            pre{
+                margin: 0;
+                color : #555;
+            }
+            .rect {
+                height: 100px;
+                width : 150px;
+                background : #53a6ff;
+                position: absolute;
+                top:0;
+                left:4px;
+            }
+            .container{
+                height: 1800px;
+                background: #eee;
+                background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(148,148,148,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(148,148,148,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(148,148,148,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(148,148,148,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(148,148,148,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(148,148,148,1) 100%);
+                margin-bottom: 20px;
+                max-width: 500px;
+                position: relative;
+                border: 4px solid #555;
+
+            }
+
+        </style>
+            
+    </head>
+    <body>
+        <h1>Demos follower</h1>
+        
+        <!--Demo start-->
+        <div class="demo">
+            <h3>Basic</h3>
+            <p>Make an element to follow scrolling</p>
+<pre>
+<code>
+$('#demo-1').follower();
+</code>
+</pre>
+
+        
+        <div class="container">
+            <div id="demo-1" class="rect">Hey! I'm a scroll follower!</div>
+        </div>
+        <script>
+            $('#demo-1').follower();
+        </script>
+        </div>
+        <!--Demo ends-->
+        
+        <!--Demo start-->
+        <div class="demo">
+            <h3>Padding</h3>
+            <p>Make an element to follow scrolling</p>
+<pre>
+<code>
+$('#demo-2').follower({
+    padding : 20
+});
+</code>
+</pre>
+
+        
+        <div class="container">
+            <div id="demo-2" class="rect">Hey! I'm a scroll follower!</div>
+        </div>
+        <script>
+            $('#demo-2').follower({
+                padding : 20
+            });
+        </script>
+        </div>
+        <!--Demo ends-->
+        
+        
+        <!--Demo start-->
+        <div class="demo">
+            <h3>Basic</h3>
+            <p>Make an element to follow scrolling</p>
+<pre>
+<code>
+$('#demo-3').follower({
+    height: '100%'
+});
+</code>
+</pre>
+
+        
+        <div class="container">
+            <div id="demo-3" class="rect">Full window height</div>
+        </div>
+        <script>
+            $('#demo-3').follower({
+                height: '100%'
+            });
+        </script>
+        </div>
+        <!--Demo ends-->
+        
+        <!--Demo start-->
+        <div class="demo">
+            <h3>Basic</h3>
+            <p>Make an element to follow scrolling</p>
+<pre>
+<code>
+$('#demo-4').follower({
+    height: '80%',
+    center : true
+});
+</code>
+</pre>
+
+        
+        <div class="container">
+            <div id="demo-4" class="rect">Centered Content</div>
+        </div>
+        <script>
+            $('#demo-4').follower({
+                height: '80%',
+                center : true
+            });
+        </script>
+        </div>
+        <!--Demo ends-->
+        
+        
+       <!--Demo start-->
+        <div class="demo">
+            <h3>Events</h3>
+            <p>Make an element to follow scrolling</p>
+<pre>
+<code>
+$('#demo-5').follower();
+
+$('#demo-5').on('followerGetTop', function(){
+    console.log('#demo-5 has reached the top')
+});
+$('#demo-5').on('followerGetBottom', function(){
+    console.log('#demo-5 has reached the bottom')
+});
+</code>
+</pre>
+
+        
+        <div class="container">
+            <div id="demo-5" class="rect">Centered Content</div>
+        </div>
+        <script>
+            $('#demo-5').follower();
+            $('#demo-5').on('followerGetTop', function(){
+                console.log('#demo-5 has reached the top')
+            });
+            $('#demo-5').on('followerGetBottom', function(){
+                console.log('#demo-5 has reached the bottom')
+            });
+        </script>
+        </div>
+        <!--Demo ends-->
+        
+    </body>
+</html>
+        
