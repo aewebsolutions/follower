@@ -78,7 +78,7 @@ Name | Type | Default | Description
 **center** | boolean | false |  Center content in the middle of a container
 **height** | number\|string | null | Height of the element. It takes original value by default. Percentage values refers to screen height
 **padding** | number | 0 | space between top of the screen and element
-**breakpoint** | number | null | Set a width value for stop following. E.g., '100%', '200px', '10em'.
+**breakpoint** | number | 0 | Set a width value for stop following. E.g., '100%', '200px', '10em'.
 
 ## Events
 
