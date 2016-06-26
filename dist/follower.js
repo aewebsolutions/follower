@@ -36,7 +36,7 @@
         var defaults = {
             center: false, // center content in the middle of container
             padding: 0, //padding top when scrolling
-            breakpoint: 900, //in px. Set a max value for stop following
+            breakpoint: 0, //in px. Set a max value for stop following
             height : '' //e.g., '100%', '200px', '10em' 
         }
         this.settings = $.extend(true, {}, defaults, options);
