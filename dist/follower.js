@@ -25,7 +25,6 @@
             return;
 
         this.parent;
-        this.notFollowClassname = 'notfollow';
         this.minTop;
         this.maxTop;
         this.height;
