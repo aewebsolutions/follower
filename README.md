@@ -83,12 +83,12 @@ Name | Type | Default | Description
 **breakpoint** | number | 0 | Set a width value for stop following. E.g., '100%', '200px', '10em'.
 
 ## Public Methods
-Return | Method
---- | ---
-void | **update** <br> Updates position of follower.
-void | **stop** <br> Stops following
-void | **start** <br> Starts following
-void | **close**($callback) <br> Detaches follower and stop following
+Method | Params | Return | Description
+--- | --- | --- | ---
+**update** | void |  void | Updates position of follower.
+**start** | void | void | Starts following
+**stop** | void | void |  Stops following
+**close** | $callback | void | Detaches follower and stop following
 
 
 ## Events
