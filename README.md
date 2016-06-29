@@ -89,6 +89,7 @@ Method | Params | Return | Description
 **start** | void | void | Starts following
 **stop** | void | void |  Stops following
 **close** | callback | void | Detaches follower and stop following
+**instance** | void | object | Returns the plugin instance
 
 
 ## Events
