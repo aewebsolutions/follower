@@ -4,6 +4,8 @@ This plugin makes an element sticky, so it follows you when you are scrolling.
 
 When it reaches the bottom of the top of its container, it automatically stop following.
 
+## Demos
+https://rawgit.com/aewebsolutions/follower/master/demos/follower.html
 
 ## Installation
 
@@ -80,9 +82,18 @@ Name | Type | Default | Description
 **padding** | number | 0 | space between top of the screen and element
 **breakpoint** | number | 0 | Set a width value for stop following. E.g., '100%', '200px', '10em'.
 
+## Public Methods
+Return | Method
+--- | ---
+void | **update** <br> Updates position of follower.
+void | **stop** <br> Stops following
+void | **start** <br> Starts following
+void | **close**($callback) <br> Detaches follower and stop following
+
+
 ## Events
 
-Name | Params | Description
+Event | Params | Description
 --- | --- | ---
 **followerGetTop** | event | Fires when element reaches top of container.
 **followerGetBottom** | event | Fires when element reaches bottom of container.
