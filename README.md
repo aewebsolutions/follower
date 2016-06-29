@@ -88,7 +88,7 @@ Method | Params | Return | Description
 **update** | void |  void | Updates position of follower.
 **start** | void | void | Starts following
 **stop** | void | void |  Stops following
-**close** | $callback | void | Detaches follower and stop following
+**close** | callback | void | Detaches follower and stop following
 
 
 ## Events
