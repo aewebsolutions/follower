@@ -65,10 +65,10 @@ $('#element-3').follower({
 $('#element-4').follower();
 
 $('#element-4').on('followerGetBottom', function(){
-    console.log('#demo-5 has reached the bottom of container')
+    console.log('#demo-4 has reached the bottom of container')
 });
 $('#element-4').on('followerGetTop', function(){
-    console.log('#demo-5 has reached the top of container')
+    console.log('#demo-4 has reached the top of container')
 });
 
 ```
